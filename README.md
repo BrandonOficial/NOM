@@ -27,4 +27,4 @@ TikTok
 Instagram
 Twitter
 
-<img src="C:\Users\55199\OneDrive\Imagens\Mockupsite" alt="Project Banner">
+<img src="/Mockupsite" alt="Project Banner">
