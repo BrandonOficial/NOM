@@ -27,4 +27,4 @@ TikTok
 Instagram
 Twitter
 
-![Texto alternativo](C:\Users\55199\OneDrive\Imagens\Mockupsite)
+<img src="C:\Users\55199\OneDrive\Imagens\Mockupsite" alt="Project Banner">
