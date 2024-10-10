@@ -27,4 +27,4 @@ TikTok
 Instagram
 Twitter
 
-<img src="/Mockupsite" alt="Project Banner">
+<img src="Mockupsite.png" alt="Project Banner">
