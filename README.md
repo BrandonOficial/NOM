@@ -26,3 +26,10 @@ Conecte-se conosco nas redes sociais:
 TikTok
 Instagram
 Twitter
+# Projeto NOM
+
+![Logo do Projeto](logosBuy/logoNom.png)
+
+## Descrição
+
+O **NOM** é uma aplicação web que fornece uma plataforma para explorar as últimas inovações em tecnologia...
