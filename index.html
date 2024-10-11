@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="logosBuy/logoNom.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="buy.css" />
+    <title>Nom</title>
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <div class="flex">
+          <a href="index.html"
+            ><img class="logo" src="logosBuy/logoNom.png" alt=""
+          /></a>
+          <nav>
+            <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="#about-section">Artigos</a></li>
+              <li><a href="#quem-somos">Quem Somos</a></li>
+            </ul>
+          </nav>
+
+          <div class="mobile-menu-icon">
+            <button onclick="menuShow()">
+              <img class="icon" src="img/icons8-menu-48.svg" alt="" />
+            </button>
+          </div>
+        </div>
+        <!-- flex -->
+        <div class="mobile-menu">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#about-section">Artigos</a></li>
+            <li><a href="#quem-somos">Quem Somos</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- container -->
+    </header>
+
+    <section class="banner">
+      <h1>Descubra novas <span>tecnologias</span></h1>
+    </section>
+
+    <div class="text">
+      <div class="text-slide">
+        <h1>
+          *Explore as inovações que estão moldando o futuro, onde tecnologia e
+          produtos se encontram para transformar experiências e impulsionar
+          negócios
+        </h1>
+      </div>
+
+      <div class="text-slide">
+        <h1>
+          *Explore as inovações que estão moldando o futuro, onde tecnologia e
+          produtos se encontram para transformar experiências e impulsionar
+          negócios
+        </h1>
+      </div>
+    </div>
+
+    <!-- Post filter -->
+    <div class="post-filter container" id="about-section">
+      <span class="filter-item active-filter" data-filter="all">ALL</span>
+      <span class="filter-item" data-filter="design">Design</span>
+      <span class="filter-item" data-filter="tech">Tech</span>
+      <span class="filter-item" data-filter="mobile">Mobile</span>
+    </div>
+    <!-- Post -->
+    <section class="post container">
+      <!-- Post box1 -->
+      <div class="post-box mobile">
+        <img src="img/POCO-X6-10-800x450.avif" alt="" class="post-img" />
+        <h2 class="category">Mobile</h2>
+        <a href="PostsBlog/post-pagePocox6Pro.html" class="post-title">
+          Poco X6 Pro: O Smartphone que Combina Desempenho e Custo-Benefício
+        </a>
+        <span class="post-date">07 Out 2024</span>
+        <p class="description">
+          O mercado de smartphones está em constante evolução, e a Poco, uma
+          marca que se destacou por oferecer dispositivos com excelente relação
+          custo-benefício, traz mais um modelo promissor: o Poco X6 Pro.
+          Combinando desempenho robusto, design atraente e recursos inovadores,
+          este smartphone é uma opção atrativa para quem busca qualidade sem
+          estourar o orçamento.
+        </p>
+        <!-- profile -->
+        <div class="profile">
+          <img src="img/box1.jpg" alt="" class="profile-img" />
+          <span class="profile-name">Brandon Ramos</span>
+        </div>
+      </div>
+
+      <!-- Post box2  -->
+      <div class="post-box mobile">
+        <img
+          src="img/ReadmiNote13.png"
+          alt=""
+          class="post-img"
+          style="
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+          "
+        />
+        <h2 class="category">Mobile</h2>
+        <a href="PostsBlog/post-pageReadmi13Pro.html" class="post-title">
+          Redmi Note 13: O mais vendido da Xiaomi no Brasil
+        </a>
+        <span class="post-date">08 Out 2024</span>
+        <p class="description">
+          O Redmi Note 13 é um smartphone Android de bom nível, ótimo para
+          fotos, que pode servir também para streaming de vídeos. Tem uma
+          bateria OK e carregamento rápido.
+        </p>
+        <!-- profile -->
+        <div class="profile">
+          <img src="img/box1.jpg" alt="" class="profile-img" />
+          <span class="profile-name">Brandon Ramos</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="about-section" id="quem-somos">
+      <div class="inner-container">
+        <h2>Quem Somos</h2>
+        <h3>Bem-vindo a NOM!</h3>
+        <p class="text-about">
+          Somos apaixonados por tecnologia e dedicados a trazer as últimas
+          novidades, análises detalhadas e recomendações de aparelhos
+          tecnológicos para nossos leitores. Nosso objetivo é ser a sua fonte
+          confiável de informações e orientações no vasto mundo da tecnologia. É
+          simplificar o complexo. Entendemos que a tecnologia está em constante
+          evolução e pode ser difícil acompanhar todas as novidades e
+          lançamentos. Por isso, estamos aqui para ajudar você a tomar decisões
+          informadas, seja na escolha de um novo smartphone, um gadget inovador
+          ou peças para o seu computador.
+        </p>
+        <div class="skills-about">
+          <span>Artigos</span>
+          <span>Tecnologia</span>
+          <span>Mercado</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="pre-footer">
+      <h2>Redes Sociais</h2>
+      <div class="pre-social-links">
+        <a href=""><i class="bx bxl-tiktok"></i></a>
+        <a href=""><i class="bx bxl-whatsapp"></i></a>
+        <a href=""><i class='bx bxl-discord-alt'></i></a>
+      </div>
+    </div>
+    <div class="footer">
+      <p>&#169; NOM All right reserved</p>
+    </div>
+
+    <!-- JQuery link -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Js -->
+    <script src="main.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
