@@ -32,6 +32,15 @@ header {
   z-index: 10; /* Para garantir que o header fique por cima do banner */
 }
 
+header.rolagem {
+  background-color: #fff; /* Quando rolar, mantém o fundo branco */
+  padding: 10px 4%;
+}
+
+header.rolagem a {
+  color: #000;
+}
+
 header img {
   width: 80px;
   height: 80px;
