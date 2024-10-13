@@ -670,5 +670,79 @@ header ul li a {
     margin: 10px 0;
     text-align: justify;
   }
+
+@media (max-width: 380px) {
+  header ul {
+    flex-direction: column; /* Empilha os itens do menu verticalmente */
+    align-items: center; /* Garante que os itens fiquem centralizados */
+    margin: 0;
+  }
+
+  header ul li {
+    margin: 5px 0; /* Reduz ainda mais o espaço entre os itens */
+  }
+
+  header ul li a {
+    font-size: 12px; /* Reduz o tamanho da fonte para caber em telas muito pequenas */
+  }
+
+  header img {
+    width: 50px; /* Diminui o tamanho da logo em telas menores */
+    height: 50px;
+  }
+
+  .banner {
+    height: 50vh; /* Ajusta a altura do banner para não ocupar tanto espaço */
+  }
+}
+
+@media (max-width: 360px) {
+  header ul {
+    flex-direction: column; /* Empilha os itens verticalmente */
+    align-items: center;
+  }
+
+  header ul li {
+    margin: 3px 0; /* Reduz ainda mais o espaçamento entre os itens */
+  }
+
+  header ul li a {
+    font-size: 11px; /* Reduz o tamanho da fonte para caber em telas muito pequenas */
+  }
+
+  header img {
+    width: 40px; /* Diminui ainda mais o tamanho da logo */
+    height: 40px;
+  }
+
+  .banner {
+    height: 50vh; /* Ajusta a altura do banner */
+  }
+}
+
+/* Media queries para telas ainda menores que 320px */
+@media (max-width: 320px) {
+  header ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header ul li {
+    margin: 2px 0; /* Margem mínima entre itens do menu */
+  }
+
+  header ul li a {
+    font-size: 10px; /* Fonte mínima para telas extremamente pequenas */
+  }
+
+  header img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .banner {
+    height: 45vh;
+  }
+}
 }
 
