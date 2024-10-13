@@ -32,15 +32,6 @@ header {
   z-index: 10; /* Para garantir que o header fique por cima do banner */
 }
 
-header.rolagem {
-  background-color: #fff; /* Quando rolar, mantém o fundo branco */
-  padding: 10px 4%;
-}
-
-header.rolagem a {
-  color: #000;
-}
-
 header img {
   width: 80px;
   height: 80px;
@@ -98,7 +89,7 @@ header ul li a {
 }
 .mobile-menu-icon img {
     width: 20px;
-}a
+}
 
 @keyframes slide {
     from {
@@ -678,31 +669,6 @@ header ul li a {
     line-height: 1.5rem;
     margin: 10px 0;
     text-align: justify;
-  }
-}
-
-@media (max-width: 380px) {
-  header ul {
-    flex-direction: column; /* Empilha os itens do menu verticalmente */
-    align-items: center; /* Garante que os itens fiquem centralizados */
-    margin: 0;
-  }
-
-  header ul li {
-    margin: 5px 0; /* Reduz ainda mais o espaço entre os itens */
-  }
-
-  header ul li a {
-    font-size: 12px; /* Reduz o tamanho da fonte para caber em telas muito pequenas */
-  }
-
-  header img {
-    width: 50px; /* Diminui o tamanho da logo em telas menores */
-    height: 50px;
-  }
-
-  .banner {
-    height: 50vh; /* Ajusta a altura do banner para não ocupar tanto espaço */
   }
 }
 
