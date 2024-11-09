@@ -57,27 +57,63 @@ header ul li a {
 
 /* Estilos para o Banner */
 .banner {
-  height: 100vh;
+  height: 80vh;
   background-image: linear-gradient(135deg, #fc88c6 0%, #bf72fd 46%, #9797ff 100%);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
+  padding: 20px;
+  color: #000;
+  text-transform: uppercase;
+  
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
+  overflow: hidden;
 }
 
-/* Efeito de transição quando o usuário rolar a página */
-
+/* Parallax */
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  background-attachment: fixed;
+  z-index: -1;
+}
 
 .banner h1 {
-    font-size: 4em;
+  font-size: 4em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  animation: fadeIn 1s forwards;
 }
 
-.banner h1 span {
-    color: #fff;
+.banner h2 {
+  font-size: 1.2em;
+  max-width: 600px;
+  text-align: center;
+  opacity: 0;
+  animation: fadeIn 1s 0.5s forwards;
+}
+
+/* Animações */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .mobile-menu-icon {
@@ -160,13 +196,13 @@ header ul li a {
     
     .btn-contato {
         display: none;
-    }
-    
-    .mobile-menu-icon {
+      }
+      
+      .mobile-menu-icon {
         display: block;
-    }
-
-    .mobile-menu-icon button {
+      }
+      
+      .mobile-menu-icon button {
         background-color: transparent;
         border: none;
         cursor: pointer;
@@ -427,11 +463,14 @@ header ul li a {
 .post-content {
   margin-top: 2rem !important;
 }
+.post-content h3 {
+  margin: 70px 0;
+}
 .sub-heading {
   font-size: 2.3rem;
 }
 .post-text {
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.7rem;
   margin: 1rem 0;
   text-align: justify;
@@ -521,11 +560,11 @@ header ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 30px 0;
+  padding: 10px 0;
 }
 
 .footer p {
-  font-size: 0.938rem;
+  font-size: 0.9em;
 }
 
 /* Responsividade */
@@ -670,6 +709,7 @@ header ul li a {
     margin: 10px 0;
     text-align: justify;
   }
+}
 
 @media (max-width: 380px) {
   header ul {
@@ -696,6 +736,7 @@ header ul li a {
   }
 }
 
+/* Media queries para telas menores que 360px */
 @media (max-width: 360px) {
   header ul {
     flex-direction: column; /* Empilha os itens verticalmente */
@@ -744,5 +785,3 @@ header ul li a {
     height: 45vh;
   }
 }
-}
-
